@@ -1,0 +1,341 @@
+body
+{
+    margin: 0px;
+    background-color: #081b29;
+    min-height:100vh ;
+    min-width: 100vh;
+    background: url(home.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* animation: vishu 3s linear; */
+}
+.nav
+{
+    background-color: transparent;
+    height: 50px;
+    min-width: 1000px;
+    position: sticky;
+    top: 0;
+}
+ul
+{
+    position: absolute;
+    margin: 0px;
+    padding-left: 0px;
+    
+    
+}
+ul li
+{
+    float: left;
+    padding: 20px;
+}
+li
+{
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    top: 0;
+    position: relative;
+}
+li:visited
+{
+    background-color: #00abf0;
+}
+header a::before
+{
+    content:"";
+    position: absolute;
+    height: 4px;
+    width:0px;
+    background-color: white;
+    bottom: -3px;
+    border-radius: 20px;
+    transition: width 0.4s ease-in-out;
+    
+}
+header a:hover::before
+{
+    width: 100%;
+}
+ul a
+{
+    position: relative;
+    text-decoration: none;
+    float: right;
+
+    
+    padding-bottom: 10px;
+    color: white;
+    padding: 0px;
+ 
+    
+}
+
+ span
+{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    font-size: xx-large;
+   font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.container
+{
+    height:670px;
+    width: 1500px;
+    position: relative;
+  
+    align-items: center;
+}
+.box1
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    top: 200px;
+    left: 150px;
+    height: 450px;
+    width: 700px;
+
+}
+
+h1,p,h3
+{
+  
+    margin: 0;
+}
+h1{
+  color: white;
+    font-size: 50px;
+    position: relative;
+}
+h3{
+    color: #00abf0;
+    position: relative;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+p
+{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.button1
+{
+    position: relative;
+    display: flex;
+   height: 42px;
+   width: 400px;
+   margin-top: 30px;
+   justify-content: space-between;
+   align-items: center;
+}
+.button1 a
+{
+    font-style: none;
+
+}
+
+.button1 a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:#081b29;
+    text-align: center;
+    text-decoration: none;
+    height: 80%;
+    width: 150px;
+    background-color:#00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 5px;
+    font-weight: 600;
+    z-index: 1;
+
+}
+.button1 a:nth-child(2)
+{
+    
+    color:#00abf0;
+    background-color:transparent;
+    border: 2px solid #00abf0;
+    border-radius: 5px;
+
+
+}
+.button1 a::before
+{
+    left: 0;
+    top: 0;
+    position: absolute;
+    content:"";
+    background-color: #081b29;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+
+
+}
+.button1 a:nth-child(2):before
+{
+    background-color: #00abf0;
+}
+.button1 a:hover::before
+{
+    width: 100%;
+    
+}
+
+.button1 a:hover
+{
+    color: #00abf0;
+}
+.button1 a:nth-child(2):hover
+{
+    color: #081b29;
+}
+.icons
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    /* background-color: azure; */
+}
+.icons a
+{
+    display: inline flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    text-align: center;
+    color: #00abf0;
+    font-size: 25px;
+    overflow: hidden;
+}
+.icons a::before
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "";
+    height: 100%;
+    width: 0px;
+    background-color: #00abf0;
+    transition: width 0.5s;
+
+    z-index: -1; 
+}
+.icons a:hover::before
+{
+    width: 100%;
+}
+.icons a:hover
+{
+    color: #081b29;
+    font-size: 30px;
+}
+.object
+{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background-color:transparent;
+    bottom: 10px;
+    height: 90vh;
+    width: 38vw;
+    /* z-index: -1; */
+    transition: 3s;
+}
+.object:hover
+{
+    background-color: #081b29;
+  opacity: 0.8;
+}
+/* for animation  */
+@keyframes vishu
+{
+    100%{
+        width: 0;
+    }
+}
+h1::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    animation: vishu 1s ease forwards;
+    animation-delay: 1s;
+}
+h3::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    animation: vishu 1s ease forwards;
+    animation-delay: 1.3s;
+}
+p::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    animation: vishu 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.button1::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    z-index: 3;
+    animation: vishu 1s ease forwards;
+    animation-delay: 1.9s;
+
+}
+.button1::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #081b29;
+    z-index: 3;
+    animation: vishu 1s ease forwards;
+    animation-delay: 2.1s;
+
+}
+li:hover
+{
+    background-color: #00abf0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Forms in html</h1>
+    <hr>
+    <form action="file.php"></form> 
+    <form action="https://www.bing.com/search">
+        <input type="text" name="q" >
+    </form><!--action means where it will transfer the data to process that is typed in form-->
+    <h2>Basic inputs</h2>
+    <div class="NameArea">
+        <label for="name">Name:</label> <!--type is a special function used to specify what we are gone fill in input box and provide invalis input if something wrong is filled in it.-->
+        <input id="name" type="text" placeholder="Enter name here"> <!--for and id tags are used to link the label with the input tag-->
+        
+    </div>
+    
+    <div>
+        <label for="phone">Phone:</label>
+        <input id="phone" type="tel" placeholder="Enter phone here"> 
+    </div>
+    <div>
+        <label for="Email">Email:</label>
+        <input id="Email" type="email" placeholder="Enter email here"> 
+    </div>
+    <hr>
+    <h2>Date of Birth input</h2>
+    <div>
+        <label for="date">Date of Birth:</label>
+        <input id="date" type="date" placeholder="select">
+    </div>
+    <hr>
+    <div>
+        <h2>Time input</h2>
+        <label for="time">Time:</label>
+        <input type="time" placeholder="select">
+    </div>
+    <hr>
+    <div>
+        <h2>Select input</h2>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required> <!--required means given information is necessary to fill the form-->
+            <option value="" disabled selected>Select gender</option> <!--disabled means cant be selected and selected means by default this option comes-->
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <hr>
+    <div>
+        <h2>Subscription plans</h2>
+        <input type="radio" id="basic" name="Subscription">
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="Subscription">
+        <label for="premium">Premium</label>
+        <input type="radio" id="vip" name="Subscription">  <!-- if we put same name to all radio type it will skect only one at a time-->
+        <label for="vip">VIP</label>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to terms and conditions.</label>
+    </div>
+    <hr>
+    <div>
+            <label for="comments">Comments</label>
+            <textarea name="com" id="comments" placeholder="Enter comments"></textarea> <!-- text area is used to used a input box of our choice-->
+    </div>
+    <hr>
+    <div>
+        <button>
+            submit
+        </button>
+    </div>
+    
+
+</body>
+
+</html>
