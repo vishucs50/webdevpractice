@@ -34,7 +34,7 @@
     /* flex-grow: 1; it will fill the empty space present in a box */
     /* flex-shrink: 0; */
     /* flex-basis: 0; it will override old size of item */
-    
+    /* flex:1; */
     /* align-self: center; */
     order: -1; /*change the order of items*/
 }

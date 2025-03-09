@@ -10,12 +10,17 @@ body
     background-size: cover;
     height: 200vh;
     background-position:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+   
 }
 header
 {
     height: 70px;
     width: 100%;
-    background-color: rgba(0,0,,0.8);
+    background-color: rgba(0,0,0,0.2);
     display: flex;
     justify-content:space-between ;
     align-items: center;
@@ -64,7 +69,7 @@ header .search-box
     width: 30px;
     border: none;
     border-radius: 30px;
-    background-color: green;
+    background-color: black;
     transform: scale(0.9);
     top: 0;
     right: 0;
@@ -126,7 +131,8 @@ header .menu
         position: fixed;
         top: 70px;
         right: -100%;
-        background-color:rgba(0,0,0,0.8);
+        background-color:rgba(0,0,0,0.2);
+        box-shadow: #000;
         height: calc(100vh-70px);
         width: 50%;
         flex-direction: column;
@@ -155,4 +161,79 @@ header .menu
     {
         width: 100%;
     }
+}
+.main{
+    
+    height: 70vh;
+    width: 90%;
+    background-color: black;
+    opacity: 0.5;
+    box-shadow: 10px 10px 20px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 50px;
+}
+.photo
+{
+    
+    background: url(boys-dp-pic-10.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position:center;
+    
+    width: 30%;
+    height: 90%;
+    border-radius: 50px;
+   background-blend-mode:darken;
+}
+.info
+{
+   
+    width:40%;
+    height: 90%;
+    
+    order: -1;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #f2f2f2;
+}
+@media(max-width:1500px)
+{
+    .main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 30px;
+
+    }
+    .photo
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .info
+    {
+        width: 100%;
+        height: 50%;
+    }
+    
+}
+@media(max-width:400px)
+{
+   .search-box input
+   {
+    width: 0px;
+   }
+   h1{
+    font-size: medium;
+   }
 }
